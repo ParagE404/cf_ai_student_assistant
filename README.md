@@ -51,7 +51,7 @@ A sophisticated AI chat assistant built entirely on Cloudflare's free tier servi
 ### Setup Instructions
 
 1. **Clone the repository**
-   git clone url
+   git clone https://github.com/ParagE404/cf_ai_student_assistant
    cd cf_ai_student_assistant
 
 2. **Install dependencies**
