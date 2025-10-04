@@ -1,0 +1,41 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "cf-ai-student-assistant",
+    "main": "src/index.js",
+    "compatibility_date": "2025-10-04",
+    
+    "ai": {
+        "binding": "AI"
+    },
+    
+    "durable_objects": {
+        "bindings": [
+            {
+                "name": "CHAT_MEMORY",
+                "class_name": "ChatMemory"
+            }
+        ]
+    },
+    
+    "migrations": [
+        {
+            "tag": "v1",
+            "new_sqlite_classes": [
+                "MyDurableObject"
+            ]
+        },
+        {
+            "tag": "v2", 
+            "renamed_classes": [
+                {
+                    "from": "MyDurableObject",
+                    "to": "ChatMemory"
+                }
+            ]
+        }
+    ],
+    
+    "observability": {
+        "enabled": true
+    }
+}
