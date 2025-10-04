@@ -1,5 +1,7 @@
 # CF AI Student Assistant
 
+Live Deployed Link: https://cf-ai-student-assistant.paragdharadhar.workers.dev/
+
 A sophisticated AI chat assistant built entirely on Cloudflare's free tier services. This project demonstrates the integration of Cloudflare Workers AI (Llama 3.3 70B), Durable Objects for state management, and WebSocket communication for real-time chat.
 
 ## 🚀 Features
